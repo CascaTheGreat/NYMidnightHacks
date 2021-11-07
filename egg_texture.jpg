@@ -1,0 +1,12 @@
+--2021-11-07 13:49:26--  https://cdn.glitch.me/ab36f519-d22c-467a-8115-782df980aa96%2FEgg_001_basecolor.jpg?v=1636292886588
+Resolving cdn.glitch.me (cdn.glitch.me)... 18.67.65.82, 18.67.65.48, 18.67.65.64, ...
+Connecting to cdn.glitch.me (cdn.glitch.me)|18.67.65.82|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 101662 (99K) [image/jpeg]
+Saving to: ‘ab36f519-d22c-467a-8115-782df980aa96%2FEgg_001_basecolor.jpg?v=1636292886588’
+
+     0K .......... .......... .......... .......... .......... 50% 24.4M 0s
+    50K .......... .......... .......... .......... ......... 100% 69.2M=0.003s
+
+2021-11-07 13:49:27 (36.0 MB/s) - ‘ab36f519-d22c-467a-8115-782df980aa96%2FEgg_001_basecolor.jpg?v=1636292886588’ saved [101662/101662]
+
