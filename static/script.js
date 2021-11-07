@@ -16,21 +16,20 @@ function getCookie(cname) {
 $("#egg").click(function() {
   document.getElementById("loginFormWrapper").style.display = "block";
 });
+$("#info").click(function() {
+  document.getElementById("loginFormWrapper").style.display = "block";
+});
 function close_overlay() {
   document.getElementById("overlay").style.display = "none";
   window.location.href = '/templates/signup.html'; //relative to domain
   return false;
 }
-var x = document.getElementById("myAudio"); 
 $(document).ready(function() {
-  document.cookie = "username=John Doe";
   $("#flat-egg")
     .on("click", function() {
       var seconds = new Date().getTime() / 1000;
       var username = getCookie("username")
-      $(this).prop("source", "-1");
       $(this).addClass("rotate");
-      $(this).addClass("shadowed");
       $.post( "/postmethod", {
       javascript_data: [username, seconds]
         
@@ -42,6 +41,3 @@ $(document).ready(function() {
       document.getElementById("match-text-curve").style.display = "block";
     });
 });
-function playAudio() { 
-        x.play();
-}

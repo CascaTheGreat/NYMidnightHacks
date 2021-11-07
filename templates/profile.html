@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.me/ab36f519-d22c-467a-8115-782df980aa96%2FEggmates.png?v=1636296377956"
+    />
+    <meta name="Eggmates" />
+    <title>Eggmates</title>
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="/static/script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+  <body>
+    <div class="content-wrapper" id="profile-content-wrapper">
+      <div class="profile-container">
+        <div class="profile-title">
+          {{username}}
+        </div>
+        <hr />
+        <div class="profile-body-wrapper">
+          <div class="float-left">
+            <img src="https://cdn.glitch.me/ab36f519-d22c-467a-8115-782df980aa96%2FUntitled%20design.png?v=1636301914151" id="profile-photo">
+          </div>
+          <div class="float-right">
+            {{user}} - {{age}}
+            <div class="profile-body-content">
+              {{bio}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="/clicker" class="get-clucking">Get Clucking!</a>
+    </div>
+  </body>
+</html>

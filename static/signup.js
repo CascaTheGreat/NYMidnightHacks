@@ -46,8 +46,10 @@ function formProgress() {
     document.getElementById("name").style.display = "inline";
     document.getElementById("age").style.display = "inline";
     document.getElementById("bio").style.display = "inline";
+    document.getElementById("finalSubmit").style.display = "inline";
+    document.getElementById("continue-button").style.display = "none";
   }
   else if(contPage==1){
-    window.location.href = '/templates/clicker.html'; //relative to domain
+    window.location.href = 'profile'; //relative to domain
   }
 }
