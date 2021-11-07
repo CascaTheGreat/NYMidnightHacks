@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="" />
+    <meta name="Eggmates" />
+    <title>Hatchmates</title>
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/script.js" defer></script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <img
+        src="https://cdn.glitch.me/ab36f519-d22c-467a-8115-782df980aa96%2Fegg.png?v=1636263929236"
+        id="flat-egg"
+      />
+      <div id="match-text-curve">
+        <svg viewBox="-110 450 600 200" style="z=0">
+          <path id="curve" d="M125,520 C200,367 320,590 220,540" />
+          <text width="300">
+            <textPath
+              xlink:href="#curve"
+              startOffset="37.8%"
+              text-anchor="middle"
+            >
+              You matched with
+            </textPath>
+          </text>
+        </svg>
+        <div class="user-match">
+          {{matchUser}}
+        </div>
+              <button class="match-button">
+        Send a Message
+      </button>
+        <button class="match-button">
+        Keep Clucking
+      </button>
+      </div>
+    </div>
+  </body>
+</html>

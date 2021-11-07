@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="" />
+    <meta name="Eggmates" />
+    <title>Hatchmates</title>
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/script.js" defer></script>
+    <script src="/static/signup.js" defer></script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="form-wrapper">
+        <form
+          method="POST"
+          action="/profile"
+          onSubmit="return close_overlay()"
+          id="signupForm"
+        >
+          <input
+            type="text"
+            placeholder="Username:"
+            autocomplete="off"
+            id="user"
+          />
+          <input
+            type="text"
+            placeholder="Password:"
+            autocomplete="off"
+            id="password"
+          />
+
+          <input
+            type="text"
+            placeholder="Confirm password:"
+            autocomplete="off"
+            id="password-confirm"
+            onblur="checkNames()"
+          />
+          <div class="error-label" id="pass-error">
+            These passwords don't match
+          </div>
+          <input
+            type="text"
+            placeholder="Name:"
+            autocomplete="off"
+            id="name"
+            style="display:none;"
+          />
+          <input
+            type="text"
+            placeholder="Age:"
+            autocomplete="off"
+            id="age"
+            style="display:none;"
+          />
+          <input
+            type="text"
+            placeholder="Bio:"
+            autocomplete="off"
+            id="bio"
+            style="display:none;"
+          />
+        </form>
+        <button id="continue-button" onClick="formProgress()">
+          Continue
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
