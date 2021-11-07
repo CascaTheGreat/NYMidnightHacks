@@ -1,24 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Baloo+2:wght@500&family=Lato&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Baloo+2:wght@500&family=Lato&display=swap");
+body {
   background-color: #284B63;
   color: #F0EAD6;
+  font-family: 'Baloo 2', cursive;
 }
-.content-wrapper{
+.content-wrapper {
   margin: auto;
   max-width: 500px;
-  text-allign:center;
-  text-align:center
+  text-align: center;
 }
-.click-suggest{
-  margin:auto;
-  max-width:500px;
+.click-suggest {
+  margin: auto;
+  max-width: 500px;
   font-size: 7vh;
-  font-family: 'Amatic SC', cursive;
-  display:inline-block
+  font-family: "Amatic SC", cursive;
+  display: inline-block;
 }
-.center {
+.right {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 5px;
   width: 50%;
+}
+model-viewer {
+  height: 84vh;
+  width: 40vw;
+  margin-left: -4vw;
+  display: inline-block;
+}
+#loginFormWrapper {
+  display: table;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.form-wrapper {
+  background-color: #F0EAD6;
+  border-radius: 10px;
+  height: 50vh;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  padding-left:10px;
+  border:none;
+  border-radius:10px;
+  margin-bottom:5%;
+  width:75%;
+  font-size:1.3em;
+  font-family: 'Baloo 2', cursive;
+}
+input:focus{
+  outline: none;
+}
+.submitButton{
+  top:200px;
 }
