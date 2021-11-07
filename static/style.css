@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Baloo+2:wght@500&family=Lato&display=swap");
+html, body {margin: 0; height: 100%; overflow: hidden}
 body {
   background-color: #284B63;
   color: #F0EAD6;
@@ -28,7 +29,7 @@ model-viewer {
   margin-left: -4vw;
   display: inline-block;
 }
-#loginFormWrapper {
+#loginFormWrapper, #infoFormWrapper {
   display: table;
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
@@ -252,12 +253,13 @@ a{
   color:#C1666B;
 }
  #info {
+     color:#353535;
      width: 25px;
      font-size: 20px;
-     border-radius:10px;
+     border-radius:50%;
      border:none;
-     margin-top: 2px;
-     margin-right: 2px;
+     margin-top: 20px;
+     margin-right: 20px;
      position:absolute;
      top:0;
      right:0;

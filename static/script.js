@@ -17,7 +17,10 @@ $("#egg").click(function() {
   document.getElementById("loginFormWrapper").style.display = "block";
 });
 $("#info").click(function() {
-  document.getElementById("loginFormWrapper").style.display = "block";
+  document.getElementById("infoFormWrapper").style.display = "block";
+});
+$("#infoFormWrapper").click(function() {
+  document.getElementById("infoFormWrapper").style.display = "none";
 });
 function close_overlay() {
   document.getElementById("overlay").style.display = "none";
