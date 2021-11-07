@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Baloo+2:wght@500&family=Lato&display=swap');
+body{
+  background-color: #284B63;
+  color: #F0EAD6;
+}
+.content-wrapper{
+  margin: auto;
+  max-width: 500px;
+  text-allign:center;
+  text-align:center
+}
+.click-suggest{
+  margin:auto;
+  max-width:500px;
+  font-size: 7vh;
+  font-family: 'Amatic SC', cursive;
+  display:inline-block
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
