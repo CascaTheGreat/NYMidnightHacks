@@ -4,9 +4,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.me/ab36f519-d22c-467a-8115-782df980aa96%2FEggmates.png?v=1636296377956"
+    />
     <meta name="Eggmates" />
-    <title>Hatchmates</title>
+    <title>Eggmates</title>
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="Home" />
     <meta property="og:type" content="article" />
@@ -15,25 +18,30 @@
     <script src="/static/signup.js" defer></script>
   </head>
   <body>
+    <button id="info">
+      I
+    </button>
+    <div id="loginFormWrapper">
+      <div class="content-wrapper" style:"font-size:2em;margin-top:30%;">
+      Eggmates takes the tough choices and bias out of dating and relationships, simplifying things through The Egg. By pairing you with users who click the egg at the same time as you, you can find your true Eggmate.
+      </div>
+    </div>
     <div class="content-wrapper">
       <div class="form-wrapper">
-        <form
-          method="POST"
-          action="/profile"
-          onSubmit="return close_overlay()"
-          id="signupForm"
-        >
+        <form method="post" action="/profile" name="signupForm">
           <input
             type="text"
             placeholder="Username:"
             autocomplete="off"
             id="user"
+            name="username"
           />
           <input
             type="text"
             placeholder="Password:"
             autocomplete="off"
             id="password"
+            name="password"
           />
 
           <input
@@ -42,6 +50,7 @@
             autocomplete="off"
             id="password-confirm"
             onblur="checkNames()"
+            name="password-confirm"
           />
           <div class="error-label" id="pass-error">
             These passwords don't match
@@ -52,6 +61,7 @@
             autocomplete="off"
             id="name"
             style="display:none;"
+            name="person-name"
           />
           <input
             type="text"
@@ -59,6 +69,7 @@
             autocomplete="off"
             id="age"
             style="display:none;"
+            name="age"
           />
           <input
             type="text"
@@ -66,6 +77,13 @@
             autocomplete="off"
             id="bio"
             style="display:none;"
+            name="bio"
+          />
+          <input
+            type="submit"
+            value="Continue"
+            style="display:none;"
+            id="finalSubmit"
           />
         </form>
         <button id="continue-button" onClick="formProgress()">
